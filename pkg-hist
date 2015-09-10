@@ -1,0 +1,32 @@
+Install Linux mint with cinnamon
+
+#Install wifi driver rtlwifi
+#move to directory rtlwifi
+#make
+#sudo make install
+
+#Update and Upgrade
+
+#Install Nvidia driver and toolkit
+#sudo apt-get install nvidia-340.76
+#go to additional driver manager
+#select 340.76 do nvidia-xconfig, add device verfication script in /etc/rc.local and reboot
+
+#download 6.5 cuda toolkit linux 64 bit run file
+#sudo sh cuda_xyz.run --override
+#don't install driver and install rest
+
+#fixing touch pad elantech multi touch activation
+#sudo dkms ldtarball psmouse-elantech-x551c.tar.gz
+#sudo dkms install -m psmouse -v elantech-x551c
+#sudo rmmod psmouse
+#sudo modprobe psmouse
+
+#add the last two lines to /etc/rc.local
+
+Packages installed:
+#r-base
+#rstudio
+#git
+#sublime-text
+
